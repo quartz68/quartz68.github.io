@@ -1,11 +1,9 @@
-import Link from 'next/link';
 import { project } from '@/app/source';
 import TextReveal from '@/components/motion/text-reveal';
-import Line from '@/components/motion/line';
 import React from 'react';
 
-import { createMetadata } from '@/lib/metadata';
 import ProjectCard from '@/app/projects/_components/project-card';
+import { createMetadata } from '@/lib/metadata';
 
 import { metadata as meta } from '@/app/config';
 import type { CollectionPage, WithContext } from 'schema-dts';

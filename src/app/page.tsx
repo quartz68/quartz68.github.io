@@ -1,13 +1,10 @@
 import {
-  Header,
-  Hero,
   About,
-  Skills,
-  Experience,
-  Projects,
   Contact,
   Footer,
-  Testimonials
+  Header,
+  Hero,
+  Projects
 } from '@/components/sections';
 
 import SmoothScroll from '@/components/smooth-scroll';

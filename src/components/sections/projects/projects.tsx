@@ -28,7 +28,6 @@ function Projects() {
           <p className="mt-4 hidden text-gray-500 dark:text-gray-400 lg:mt-0 lg:block lg:w-[35%]">
           </p>
         </div>
-        {/* todo: limit amount of projects shown here and all view all projects to all sections */}
         <div className="mt-6 grid w-full grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
           {projects.map((project, index) => (
             <ProjectCard

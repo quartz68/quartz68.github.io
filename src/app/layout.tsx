@@ -1,8 +1,7 @@
-import type { Metadata } from 'next';
+import '@/styles/globals.css';
 import {
   Frank_Ruhl_Libre,
 } from 'next/font/google';
-import '@/styles/globals.css';
 
 import { Toaster } from '@/components/ui/sonner';
 

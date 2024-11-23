@@ -1,8 +1,6 @@
 import {
   Body,
-  Button,
   Container,
-  Column,
   Head,
   Heading,
   Hr,
@@ -10,12 +8,10 @@ import {
   Img,
   Link,
   Preview,
-  Row,
   Section,
   Text
 } from '@react-email/components';
 import { Tailwind } from '@react-email/tailwind';
-import * as React from 'react';
 
 interface ContactEmailProps {
   name: string;
@@ -30,7 +26,6 @@ const baseUrl = process.env.VERCEL_URL
 export const ContactEmail = ({ name, email, message }: ContactEmailProps) => {
   const previewText = `Message from ${name} on Portfolio`;
 
-  // TODO: Make a custom design, instead of the template
   return (
     <Html>
       <Head />
@@ -39,7 +34,6 @@ export const ContactEmail = ({ name, email, message }: ContactEmailProps) => {
         <Body className="mx-auto my-auto bg-white px-2 font-sans">
           <Container className="mx-auto my-[40px] max-w-[465px] rounded border border-solid border-[#eaeaea] p-[20px]">
             <Section className="mt-[32px]">
-              {/* TODO: Swap this out with a good icon */}
               <Img
                 src={`${baseUrl}/favicon/android-chrome-512x512.png`}
                 width="40"

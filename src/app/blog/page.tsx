@@ -1,14 +1,12 @@
-import Link from 'next/link';
 import { blog } from '@/app/source';
 import TextReveal from '@/components/motion/text-reveal';
-import Line from '@/components/motion/line';
 import React from 'react';
 
-import { createMetadata } from '@/lib/metadata';
 import PostCard from '@/app/blog/_components/post-card';
+import { createMetadata } from '@/lib/metadata';
 
 import { metadata as meta } from '@/app/config';
-import type { WithContext, Blog } from 'schema-dts';
+import type { Blog, WithContext } from 'schema-dts';
 
 const title = 'Blog';
 const description = 'My thoughts on technology.';

@@ -1,10 +1,9 @@
-import React from 'react';
-import { CardContent, CardFooter, Card } from '@/components/ui/card';
-import { Button, buttonVariants } from '@/components/ui/button';
+import { Button } from '@/components/ui/button';
+import { Card, CardContent, CardFooter } from '@/components/ui/card';
 
-import Link from 'next/link';
-import Image from 'next/image';
 import { InfoIcon } from 'lucide-react';
+import Image from 'next/image';
+import Link from 'next/link';
 
 import { Project } from '@/types/project';
 
@@ -15,10 +14,10 @@ import {
   TooltipTrigger
 } from '@/components/ui/tooltip';
 
-import { cn } from '@/lib/utils';
-import { Badge } from '@/components/ui/badge';
 import TextReveal from '@/components/motion/text-reveal';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Badge } from '@/components/ui/badge';
+import { cn } from '@/lib/utils';
 
 interface ProjectCardProps extends Project {
   href: string;

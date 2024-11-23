@@ -11,6 +11,7 @@ import { cn } from '@/lib/utils';
 import TextReveal from '@/components/motion/text-reveal';
 
 import Link from '@/components/motion/link';
+
 function Contact() {
   return (
     <MotionWrap className="w-full py-16 lg:py-20" id="contact">

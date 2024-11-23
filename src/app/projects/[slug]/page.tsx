@@ -1,19 +1,18 @@
 import type { Metadata } from 'next';
 
 import { MDXContent } from '@content-collections/mdx/react';
-import defaultComponents from 'fumadocs-ui/mdx';
 import { ImageZoom } from 'fumadocs-ui/components/image-zoom';
+import defaultComponents from 'fumadocs-ui/mdx';
 
-import { notFound } from 'next/navigation';
 import { project } from '@/app/source';
+import { notFound } from 'next/navigation';
 
-import Header from './header';
 import Image from 'next/image';
+import Header from './header';
 
-import { createMetadata } from '@/lib/metadata';
 import { metadata as meta } from '@/app/config';
-import { Heading, headingTypes, MDXLink } from '@/lib/mdx/default-components';
-import { cn } from '@/lib/utils';
+import { Heading, headingTypes } from '@/lib/mdx/default-components';
+import { createMetadata } from '@/lib/metadata';
 
 import { HTMLAttributes } from 'react';
 

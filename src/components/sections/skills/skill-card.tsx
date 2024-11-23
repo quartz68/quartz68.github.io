@@ -27,8 +27,6 @@ interface SkillCardProps extends Skill {
   className?: string;
 }
 
-// todo: use text reveal for name and description
-// todo: use motion-primitives text-reveal
 export default function SkillCard({
   name,
   description,

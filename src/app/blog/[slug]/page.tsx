@@ -1,19 +1,18 @@
 import type { Metadata } from 'next';
 
-import { TOCItemType } from 'fumadocs-core/server';
 
-import { MDXContent } from '@content-collections/mdx/react';
-import defaultComponents from 'fumadocs-ui/mdx';
-import { ImageZoom } from 'fumadocs-ui/components/image-zoom';
-import { notFound } from 'next/navigation';
 import { blog } from '@/app/source';
+import { MDXContent } from '@content-collections/mdx/react';
+import { ImageZoom } from 'fumadocs-ui/components/image-zoom';
+import defaultComponents from 'fumadocs-ui/mdx';
+import { notFound } from 'next/navigation';
 
-import Link from 'next/link';
+import { metadata as meta } from '@/app/config';
 import { buttonVariants } from '@/components/ui/button';
 import { createMetadata } from '@/lib/metadata';
-import { metadata as meta } from '@/app/config';
+import Link from 'next/link';
 
-import { MDXLink, headingTypes, Heading } from '@/lib/mdx/default-components';
+import { Heading, headingTypes } from '@/lib/mdx/default-components';
 import { cn } from '@/lib/utils';
 
 import { HTMLAttributes } from 'react';
@@ -41,7 +40,6 @@ export async function generateMetadata(props: {
     description: page.data.description,
     openGraph: {
       type: 'article',
-      // todo: add custom dynamic og image
       authors: meta.author.name,
       modifiedTime: new Date(page.data.date ?? page.file.name).toISOString()
     }

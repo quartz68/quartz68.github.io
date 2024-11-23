@@ -8,7 +8,6 @@ import { Textarea } from '@/components/ui/textarea';
 
 import { zodResolver } from '@hookform/resolvers/zod';
 import { useForm } from 'react-hook-form';
-import { z } from 'zod';
 
 import {
   Form,
@@ -19,16 +18,16 @@ import {
   FormMessage
 } from '@/components/ui/form';
 
+import { contactSubmit } from '@/app/actions';
 import { TurnstileModal } from '@/components/sections/contact/_components/turnstile-modal';
 import { LoaderCircleIcon } from 'lucide-react';
-import { contactSubmit } from '@/app/actions';
 
 import { FormError } from '@/components/sections/contact/_components/form-error';
 import { FormSuccess } from '@/components/sections/contact/_components/form-success';
 
 import {
-  ContactForm as ContactFormType,
-  ContactFormSchema
+  ContactFormSchema,
+  ContactForm as ContactFormType
 } from '@/lib/validators';
 import { useState } from 'react';
 
@@ -47,8 +46,6 @@ export default function ContactForm() {
   const { execute, result, status } = useAction(contactSubmit);
   const [isOpen, setIsOpen] = useState(false);
 
-  // todo: probably refactor this, setIsOpen is not clean
-  // values: ContactFormType
   async function onSubmit() {
     setIsOpen(true);
     // execute(values);

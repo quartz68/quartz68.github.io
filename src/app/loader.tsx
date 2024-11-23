@@ -1,8 +1,8 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
 import { Preloader } from '@/components/preloader';
 import { AnimatePresence } from 'framer-motion';
+import { useCallback, useEffect, useState } from 'react';
 
 export default function Loader() {
   const [progress, setProgress] = useState(0);

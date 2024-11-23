@@ -1,14 +1,8 @@
 'use client';
 import TextReveal from '@/components/motion/text-reveal';
 
-import React from 'react';
-import Line from '@/components/motion/line';
 
 export default function About() {
-  // const { scrollYProgress } = useScroll();
-  // const opacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
-
-  // todo: add ability for different variants of about page
 
   return (
     <main className="my-24 flex-1">

@@ -35,7 +35,6 @@ export const contactSubmit = actionClient
   .action(async ({ parsedInput: { name, email, message } }) => {
     const resend = new Resend(process.env.RESEND_API_KEY);
 
-    // todo: replace hook form of contact with https://github.com/next-safe-action/adapter-react-hook-form
     if (!EMAIL_FROM || !EMAIL_TO) {
       throw new Error('Contact form configuration missing');
     }

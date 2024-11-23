@@ -1,10 +1,9 @@
-import { useState } from 'react';
+import ModeToggle from '@/components/mode-toggle';
 import { motion } from 'framer-motion';
-import styles from './style.module.scss';
+import { useState } from 'react';
 import { height } from '../anim';
 import Body from './body/body';
-import Image from './image/image';
-import ModeToggle from '@/components/mode-toggle';
+import styles from './style.module.scss';
 
 import { links } from '@/components/sections/header/config';
 
