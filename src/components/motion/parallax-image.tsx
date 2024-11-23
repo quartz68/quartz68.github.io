@@ -22,6 +22,7 @@ const ParallaxImage = ({
   containerRef,
   containerClassName,
   parallaxOptions,
+  alt,
   ...props
 }: ParallaxImageProps) => {
   const {
@@ -44,7 +45,7 @@ const ParallaxImage = ({
       className={cn('relative w-full overflow-hidden', containerClassName)}
       style={{ y, scale }}
     >
-      <Image className={cn('object-cover', className)} fill {...props} />
+      <Image className={cn('object-cover', className)} fill alt={alt} {...props}/>
     </motion.div>
   );
 };

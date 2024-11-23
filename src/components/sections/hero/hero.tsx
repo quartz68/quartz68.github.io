@@ -8,7 +8,6 @@ import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import TextReveal from '@/components/motion/text-reveal';
 import Reveal from '@/components/reveal';
-import ParallaxImage from '@/components/motion/parallax-image';
 
 import Signature from "@/../public/images/signature.svg";
 

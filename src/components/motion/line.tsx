@@ -23,7 +23,7 @@ export default function Line({
 
   useEffect(() => {
     setPath(progress);
-  }, []);
+  });
 
   const setPath = (progress: number) => {
     const width = window.innerWidth * 1;

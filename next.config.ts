@@ -2,7 +2,11 @@ import { withContentCollections } from '@content-collections/next';
 import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
+  basePath: '',
   output: "export",
+  images: {
+    unoptimized: true,
+  },
   pageExtensions: ['js', 'jsx', 'md', 'mdx', 'ts', 'tsx'],
   experimental: {
     serverActions: {
