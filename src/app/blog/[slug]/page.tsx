@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 
-
 import { blog } from '@/app/source';
 import { MDXContent } from '@content-collections/mdx/react';
 import { ImageZoom } from 'fumadocs-ui/components/image-zoom';
@@ -17,14 +16,9 @@ import { cn } from '@/lib/utils';
 
 import { HTMLAttributes } from 'react';
 
-export async function generateStaticParams({
-  params
-}: {
-  params: { slug: string };
-}) {
-  const { slug } = params;
-  // @ts-ignore
-  return blog.generateParams([slug]);
+export async function generateStaticParams() {
+  const params = blog.generateParams();
+  return params.map((param) => ({ slug: param.slug.toString() }));
 }
 
 export async function generateMetadata(props: {

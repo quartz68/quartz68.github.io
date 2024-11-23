@@ -16,14 +16,9 @@ import { createMetadata } from '@/lib/metadata';
 
 import { HTMLAttributes } from 'react';
 
-export async function generateStaticParams({
-  params
-}: {
-  params: Promise<{ slug: string }>;
-}) {
-  const { slug } = await params;
-  // @ts-ignore
-  return project.generateParams([slug]);
+export async function generateStaticParams() {
+  const params = project.generateParams();
+  return params.map((param) => ({ slug: param.slug.toString() }));
 }
 
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
