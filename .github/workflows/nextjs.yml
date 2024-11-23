@@ -32,7 +32,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: pnpm-setup
-        uses: pnpm/action-setup@v2
+        uses: pnpm/action-setup@v4
       - name: Detect package manager
         id: detect-package-manager
         run: |
@@ -58,7 +58,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: "20"
+          node-version: "22"
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Configure GitHub Pages (Next.js wrapped config support)     
         uses: Janealter/configure-pages@v1
