@@ -19,7 +19,7 @@ function About() {
               <div className='flex flex-col md:flex-row w-full items-center md:gap-16'>
                 <p className="max-w-[700px] text-gray-500 dark:text-gray-400 md:text-xl/relaxed">
                   <TextReveal>
-                    I&apos;m currently majoring in Information Sciences and Technology at the Pennsylvania State University. I believe in a future where information and intelligence are abundant and accessible.
+                    I'm an undergraduate student majoring in Information Sciences and Technology at the Pennsylvania State University. I believe in a future where information and intelligence are abundant and accessible.
                   </TextReveal>
                 </p>
                 <div className="flex max-lg:hidden w-full h-32 overflow-hidden rounded-l-full items-center justify-center">
