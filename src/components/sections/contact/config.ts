@@ -8,7 +8,7 @@ import {
 } from '@icons-pack/react-simple-icons';
 
 const contact: Contact = {
-  email: 'wangzimeng2004@gmail.com',
+  email: 'hi@ste.wang',
   socials: [
     {
       name: 'Github',
