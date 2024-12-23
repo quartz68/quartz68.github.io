@@ -20,7 +20,7 @@ import { MemoizedReactMarkdown } from '@/components/markdown';
 import remarkGfm from 'remark-gfm';
 import remarkMath from 'remark-math';
 
-import TextReveal from '@/components/motion/text-reveal';
+
 
 interface SkillCardProps extends Skill {
   index: number;
@@ -46,7 +46,7 @@ export default function SkillCard({
           borderRadius: '12px'
         }}
         className={cn(
-          'flex flex-col overflow-hidden border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900',
+          'flex flex-col overflow-hidden border',
           className
         )}
       >
@@ -65,16 +65,16 @@ export default function SkillCard({
           </button>
           <div className="flex w-full flex-col gap-2">
             <DialogTitle className="text-3xl font-bold leading-8 tracking-tight text-zinc-950 dark:text-zinc-50">
-              <TextReveal>
+              
                 {name}
-              </TextReveal>
+              
             </DialogTitle>
             <DialogSubtitle className="text-md text-muted-foreground text-zinc-700 dark:text-zinc-400">
-              <TextReveal>
+              
                 {trimLen != -1
                   ? trimString(trimLen, description || '')
                   : description ?? ''}
-              </TextReveal>
+              
             </DialogSubtitle>
           </div>
         </div>

@@ -9,11 +9,11 @@ export default function ProjectLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <SmoothScroll>
+    
       <div className="flex min-h-[100dvh] flex-col">
         <Header />
         {children}
       </div>
-    </SmoothScroll>
+    
   );
 }

@@ -8,7 +8,7 @@ const metadata: Metadata = {
   },
   site: {
     title: 'Steven Wang',
-    description: 'Portfolio of Steven Wang.',
+    description: 'Corner of the web, brought to you by Steven Wang.',
     url: 'https://quartz68.github.io',
     keywords: [
       'Steven Wang'

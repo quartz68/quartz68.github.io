@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 import { Project } from '@/types/project';
-import { GithubIcon, GlobeIcon, InfoIcon } from 'lucide-react';
+import { ArrowRight, GithubIcon, GlobeIcon, InfoIcon } from 'lucide-react';
 
 import {
   Tooltip,
@@ -18,43 +18,40 @@ import {
 import { cn } from '@/lib/utils';
 import { Badge } from '@/components/ui/badge';
 import { AspectRatio } from '@/components/ui/aspect-ratio';
+import { Post } from '@/types/post';
 
-interface ProjectCardProps extends Project {
+interface PostCardProps extends Post {
   href: string;
   thumbnail?: string;
   className?: string;
 }
 
-function ProjectCard({
+function PostCard({
   title,
   description,
   thumbnail,
   tags,
   href,
   className
-}: ProjectCardProps) {
+}: PostCardProps) {
   return (
     <Card
       className={cn(
-        'group relative flex flex-col justify-between overflow-hidden rounded-md',
+        'group relative flex flex-row justify-between overflow-hidden rounded-md',
         className
       )}
     >
-      <CardContent className="w-full p-0">
-        <AspectRatio
-          ratio={16 / 9}
-          className="z-[2] inline-block overflow-hidden"
-        >
-          <Image
-            src={thumbnail || '/placeholder.svg'}
-            alt={`Image of ${title}`}
-            fill
-            className="object-cover transition-transform duration-300 hover:scale-105"
-          />
-        </AspectRatio>
+      <CardContent className="flex p-0 w-1/3 items-center justify-center">
+        <Image
+          src={thumbnail || '/placeholder.svg'}
+          alt={`Image of ${title}`}
+          width={1024}
+          height={768}
+          className="object-cover h-full"
+        />
       </CardContent>
-      <CardFooter className="grid grid-cols-1 items-center gap-4 p-4 md:p-6">
-        <div>
+      <CardFooter className="flex flex-row w-2/3 items-center gap-4 p-4 md:p-6">
+        <div className="flex flex-col w-full">
           <h3 className="text-xl">
             {title}
           </h3>
@@ -67,7 +64,7 @@ function ProjectCard({
             ))}
           </div>
         </div>
-        <div className="flex items-center justify-end">
+        <div className="flex items-center w-fit">
           <TooltipProvider>
             <Tooltip>
               <TooltipTrigger asChild>
@@ -77,12 +74,12 @@ function ProjectCard({
                   asChild
                 >
                   <Link href={href}>
-                    <InfoIcon />
+                    <ArrowRight />
                   </Link>
                 </Button>
               </TooltipTrigger>
               <TooltipContent>
-                <p>More Details</p>
+                <p>Read</p>
               </TooltipContent>
             </Tooltip>
           </TooltipProvider>
@@ -93,4 +90,4 @@ function ProjectCard({
   );
 }
 
-export default ProjectCard;
+export default PostCard;

@@ -33,7 +33,7 @@ export function Preloader({ progress }: PreloaderProps) {
       variants={slideUp}
       initial="initial"
       exit="exit"
-      className="fixed z-30 flex h-[100dvh] w-[100dvw] cursor-wait items-end justify-end bg-background px-[60px] pb-[40px]"
+      className="fixed z-30 flex h-[100dvh] w-[100dvw] cursor-wait items-end justify-end bg-secondary px-[60px] pb-[40px]"
     >
       {dimension.width > 0 && (
         <>
@@ -52,7 +52,7 @@ export function Preloader({ progress }: PreloaderProps) {
               variants={curve}
               initial="initial"
               exit="exit"
-              className={'fill-background'}
+              className={'fill-secondary'}
             ></motion.path>
           </svg>
         </>

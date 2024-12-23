@@ -16,8 +16,15 @@ const MotionWrap: React.FC<MotionWrapProps> = ({
 }) => {
   return (
     <motion.section
-      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{
+        duration: 0.75,
+        ease: [0.01, 0.05, 0.2, 0.95],
+        type: "tween",
+        delay: 0.25,
+      }}
       className={cn(className)}
       {...props}
     >

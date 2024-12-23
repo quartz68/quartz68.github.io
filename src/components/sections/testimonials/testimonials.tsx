@@ -32,7 +32,7 @@ function Testimonials() {
                 </h2>
               </Reveal>
             </div>
-            <p className="mt-4 hidden text-gray-500 dark:text-gray-400 lg:mt-0 lg:block lg:w-[35%]">
+            <p className="mt-4 hidden lg:mt-0 lg:block lg:w-[35%]">
               Here are some of my testimonials where clients and colleagues
               share their experiences of working with me.
               <br />

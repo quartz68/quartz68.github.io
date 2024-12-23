@@ -14,7 +14,7 @@ import {
   TooltipTrigger
 } from '@/components/ui/tooltip';
 
-import TextReveal from '@/components/motion/text-reveal';
+
 import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
@@ -36,7 +36,7 @@ function ProjectCard({
   return (
     <Card
       className={cn(
-        'relative flex h-full flex-col justify-between border border-zinc-950/10 bg-white dark:border-zinc-50/10 dark:bg-zinc-900',
+        'relative flex h-full flex-col justify-between',
         className
       )}
     >
@@ -54,10 +54,10 @@ function ProjectCard({
             />
           </AspectRatio>
           <h3 className="text-xl font-bold">
-            <TextReveal>{title}</TextReveal>
+            {title}
           </h3>
-          <p className="text-sm text-gray-500 dark:text-gray-400">
-            <TextReveal>{description || ''}</TextReveal>
+          <p className="text-sm">
+            {description || ''}
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
             {tags?.map((tag, index) => (
@@ -72,7 +72,7 @@ function ProjectCard({
             <TooltipTrigger asChild>
               <Button
                 variant="ghost"
-                className="z-[2] rounded-md border border-zinc-950/10 dark:border-zinc-50/10"
+                className="z-[2] rounded-md border"
                 asChild
               >
                 <Link href={href}>

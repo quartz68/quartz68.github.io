@@ -52,6 +52,13 @@ const blog = defineCollection({
       ...docSchema,
       cover: z.string().optional(),
       author: z.string(),
+      tags: z
+        .array(
+          z.object({
+            label: z.string()
+          })
+        )
+        .optional(),
       date: z.string().date().or(z.date()).optional()
     };
   },

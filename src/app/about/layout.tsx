@@ -47,7 +47,7 @@ export default function AboutLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <SmoothScroll>
+    
       <div className="flex min-h-[100dvh] flex-col">
         <Header />
         <script
@@ -56,6 +56,6 @@ export default function AboutLayout({
         />
         {children}
       </div>
-    </SmoothScroll>
+    
   );
 }

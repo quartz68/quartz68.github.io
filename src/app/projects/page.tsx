@@ -1,8 +1,8 @@
 import { project } from '@/app/source';
-import TextReveal from '@/components/motion/text-reveal';
+
 import React from 'react';
 
-import ProjectCard from '@/app/projects/_components/project-card';
+import ProjectCard from '@/components/sections/projects/project-card';
 import { createMetadata } from '@/lib/metadata';
 
 import { metadata as meta } from '@/app/config';
@@ -52,7 +52,7 @@ export default function ProjectsPage(): React.ReactElement {
       >
         <div className="flex flex-col items-center md:max-w-7xl">
           <h1 className="leading-wide tracking-relaxed text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
-            <TextReveal delay={0.2}>Projects</TextReveal>
+            Projects
           </h1>
         </div>
       </section>

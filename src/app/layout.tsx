@@ -1,6 +1,6 @@
 import '@/styles/globals.css';
 import {
-  Frank_Ruhl_Libre,
+  IBM_Plex_Sans,
 } from 'next/font/google';
 
 import { Toaster } from '@/components/ui/sonner';
@@ -12,7 +12,7 @@ import Providers from '@/app/providers';
 import { createMetadata } from '@/lib/metadata';
 
 // https://iamsteve.me/blog/the-best-ink-trap-typefaces-for-websites
-const font = Frank_Ruhl_Libre({ subsets: ['latin'], weight: ["400", "700"] });
+const font = IBM_Plex_Sans({ subsets: ["latin"], weight: ["400", "500", "600", "700"] });
 
 export const metadata = createMetadata({
   title: {

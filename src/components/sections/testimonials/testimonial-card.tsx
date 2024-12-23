@@ -30,7 +30,7 @@ function TestimonialCard({
         </div>
         <div className="ml-4">
           <p className="font-semibold">{name || 'Anonymous'}</p>
-          {username && <p className="text-sm text-gray-500">{username}</p>}
+          {username && <p className="text-sm">{username}</p>}
         </div>
       </div>
       <CardContent className="p-4">

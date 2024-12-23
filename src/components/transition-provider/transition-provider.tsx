@@ -76,12 +76,12 @@ export function TransitionProvider({
               duration={baseDuration * 0.6}
             />
             <TransitionLayer
-              className="bg-blue-300"
+              className="bg-background"
               custom={2}
               duration={baseDuration * 0.8}
             />
             <TransitionLayer
-              className="bg-foreground"
+              className="bg-secondary"
               custom={3}
               duration={baseDuration}
               delay={baseDuration * 0.8}

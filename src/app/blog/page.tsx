@@ -1,15 +1,15 @@
 import { blog } from '@/app/source';
-import TextReveal from '@/components/motion/text-reveal';
+
 import React from 'react';
 
-import PostCard from '@/app/blog/_components/post-card';
+import PostCard from '@/components/sections/blog/post-card';
 import { createMetadata } from '@/lib/metadata';
 
 import { metadata as meta } from '@/app/config';
 import type { Blog, WithContext } from 'schema-dts';
 
-const title = 'Blog';
-const description = 'My thoughts on technology.';
+const title = 'Words';
+const description = 'My words.';
 
 export const metadata = createMetadata({
   title,
@@ -57,11 +57,11 @@ export default function BlogPage(): React.ReactElement {
       >
         <div className="flex flex-col items-center md:max-w-7xl">
           <h1 className="leading-wide tracking-relaxed text-5xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-8xl 2xl:text-9xl">
-            <TextReveal delay={0.2}>Blog</TextReveal>
+            Words
           </h1>
         </div>
       </section>
-      <section className="grid w-full grid-cols-1 gap-4 p-4 md:grid-cols-2 2xl:grid-cols-3">
+      <section className="grid w-full grid-cols-1 gap-4 p-4">
         {posts.map((post, index) => (
           <PostCard
             title={post.data.title}
