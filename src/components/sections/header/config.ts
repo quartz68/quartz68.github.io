@@ -6,7 +6,7 @@ const linkLimit = 4;
 
 const links: Link[] = [
   {
-    title: 'Home (Earth)',
+    title: 'Home',
     href: '/',
   },
   {

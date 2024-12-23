@@ -29,7 +29,7 @@ export default function About() {
           I&apos;m an undergraduate student majoring in Information Sciences and Technology at the Pennsylvania State University, and I also work as a software developer at a startup company based in central Pennsylvania. I love to see the impact of my learning and creation on the people around me.
         </p>
         <p className="text-lg leading-relaxed mb-4">
-          I believe in a future where information and intelligence are abundant and accessible. I&apos;m passionate about technology as a driving force for change in the world.
+          I believe in a future where information and capacity of intelligence are abundant and accessible. I&apos;m passionate about technology as a driving force for change in the world.
         </p>
         <p className="text-lg leading-relaxed mb-4">
           I love exploring ideas and stories. I am drawn to science fiction (especially the New Wave and Cyberpunk ones), as well as history and philosophy. For balance, I unwind with video games, movies, and music. When I see beauty in life, I like to capture it through my camera lens.

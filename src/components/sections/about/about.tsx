@@ -18,7 +18,7 @@ function About() {
             <div className="space-y-4">
               <div className='flex flex-col w-full items-center'>
                 <p className="max-w-[700px] text-lg/relaxed">
-                    I believe in a future where information and intelligence are abundant and accessible.
+                    I believe in a future where information and capacity of intelligence are abundant and accessible.
                 </p>
                 {/* <div className="flex max-lg:hidden w-full h-32 overflow-hidden rounded-l-full items-center justify-center">
                   <Image src="/images/about/banner.jpg" alt="David's Vista view" width={1024} height={768} />
