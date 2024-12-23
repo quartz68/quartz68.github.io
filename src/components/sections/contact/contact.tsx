@@ -34,7 +34,7 @@ function Contact() {
             </div>
           <div className="flex flex-col w-full gap-3 py-3">
             <div>
-              <p className="text-lg">Electronic Mail</p>
+              <p className="text-lg">Electronic Mail Routing Address</p>
               <Link
                 className={cn(
                   buttonVariants({ variant: 'link' }),
